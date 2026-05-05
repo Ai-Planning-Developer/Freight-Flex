@@ -92,15 +92,15 @@
 |---|---|
 | TLS | TLS 1.2 minimum; TLS 1.3 preferred |
 | HSTS | Strict-Transport-Security header (max-age 1 year, includeSubDomains) |
-| Certificate | Wildcard cert via AWS Certificate Manager / Let's Encrypt |
+| Certificate | Wildcard cert via Microsoft Azure Certificate Manager / Let's Encrypt |
 | WebSocket | WSS (TLS-encrypted WebSocket) |
 
 ### 5.3 Data at Rest
 | Control | Implementation |
 |---|---|
-| Database encryption | AWS RDS encryption at rest (AES-256) |
+| Database encryption |Microsoft Azure rest (AES-256) |
 | S3 / GCS encryption | Server-side encryption (SSE-S3 or SSE-KMS) |
-| Secrets management | AWS Secrets Manager; no secrets in code or env files in repos |
+| Secrets management | Microsoft Azure Secrets Manager; no secrets in code or env files in repos |
 | Backup encryption | RDS automated backups inherit encryption |
 
 ### 5.4 Application Security (OWASP Top 10 Mapping)
@@ -137,7 +137,7 @@
 | Security groups | Minimal open ports; no 0.0.0.0/0 on DB or internal services |
 | IAM | Least-privilege IAM roles; no root account used |
 | Container scanning | ECR image scanning on push |
-| DDoS protection | AWS Shield Standard (Phase 1); WAF rules for rate limiting |
+| DDoS protection | Microsoft Azure Shield Standard (Phase 1); WAF rules for rate limiting |
 
 ---
 

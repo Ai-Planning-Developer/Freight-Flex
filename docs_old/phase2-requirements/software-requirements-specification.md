@@ -33,7 +33,7 @@ FreightFlex is a standalone SaaS product. It integrates with:
 - **Payment Gateway** (Razorpay or Stripe with escrow/nodal support)
 - **Email Service** (SMTP / SendGrid for verification and notifications)
 - **Push Notification Service** (Firebase Cloud Messaging)
-- **Cloud Storage** (AWS S3 / GCS for document and photo uploads)
+- **Cloud Storage** (Microsoft Azure / GCS for document and photo uploads)
 
 ### 2.2 User Classes
 | Class | Interface | Primary Actions |
@@ -45,7 +45,7 @@ FreightFlex is a standalone SaaS product. It integrates with:
 ### 2.3 Operating Environment
 - Web: Chrome 110+, Firefox 110+, Safari 16+, Edge 110+
 - Mobile: Android 9+, iOS 14+
-- Backend: Python 3.11+ with FastAPI on Linux containers (Docker / AWS ECS Fargate)
+- Backend: Python 3.11+ with FastAPI on Linux containers (Docker / Microsoft Azure)
 - Database: MySQL 8.0 (InnoDB engine, UTF8MB4 charset)
 - Cache: Redis 7 (sessions, Pub/Sub, rate-limit counters)
 - ORM / Migrations: SQLAlchemy 2.0 + Alembic
